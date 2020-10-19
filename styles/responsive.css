@@ -1,0 +1,197 @@
+
+@media (max-width: 1050px) /*Com 1050px de largura no máximo, e abaixo disso...*/
+{
+
+    p {
+        line-height: 2vw;
+    }
+
+    ul {
+        line-height: 2vw;
+    }
+
+    .p-home {
+        width: 50%;
+    }
+
+    
+    .text-home .title-bold{
+        margin-top: -8vw;
+    }
+
+    .logo-menu {
+        width: 30px;
+    }
+
+    .logo-home {
+        float: right;
+    
+        display: flex;
+        
+        width: 35%;
+    
+        position: absolute;
+    
+        right: 15vw;
+        top: 20vw;
+    }
+
+
+    /*.button {
+        display: flex;
+        flex-direction: column;
+        width: 120%;
+    }
+
+    .button button{
+        margin-top: 5%;
+    }*/
+
+    .button {
+        width: 60%;
+    
+        font-size: clamp(0.5vw, 1.5vw, 3vw);
+    
+        display: flex;
+        flex-direction: row;
+    
+        justify-content: space-between;
+        align-items: center;
+        align-self: center;
+    }
+    
+    .botao{
+        width: 15vw;
+        height: 3vh;
+    
+        border-radius: 20px;
+        border: none;
+    
+        font-size: clamp(1vw, 1.3vw, 3vw);
+    
+        background-color: #232323;
+        color: white;
+    
+        cursor: pointer;
+    
+        z-index: 1;
+    }
+
+    .botao-obj{
+        border: #00ff84 2px solid;
+        background-position: right left;
+        transition: 200ms ease-out;
+    }
+    
+    .botao-obj:hover, .botao-obj:focus{
+        background: #00ff84;
+    }
+    
+    .botao-val{
+        border: #eaaf3b 2px solid;
+        background-position: right left;
+        transition: 200ms ease-out;
+    }
+    
+    .botao-val:hover, .botao-val:focus{
+        background: #eaaf3b;
+    }
+    
+    .botao-vis{
+        border: #ff545c 2px solid;
+        background-position: right left;
+        transition: 200ms ease-out;
+    }
+    
+    .botao-vis:hover, .botao-vis:focus{
+        background:#ff545c;
+    }
+    
+    .botao-env{
+        margin-top: 3%;
+    
+        border: #14ccbf 2px solid;
+        background-position: right left;
+        transition: 200ms ease-out;
+    }
+    
+    .botao-env:hover, .botao-env:focus{
+        background: #14ccbf;
+    }
+
+    .form input[type="text"] {
+        font-size: clamp(1.3vw, 2vw, 3vw);
+        padding-left: 10px;
+    }
+    
+    .form input[type="email"] {
+        font-size: clamp(1.3vw, 2vw, 3vw);
+        padding-left: 10px;
+    }
+    
+    .form textarea {
+        font-size: clamp(1.3vw, 2vw, 3vw);
+        padding-left: 10px;
+        padding-top: 3%;
+    }
+
+}
+
+
+@media (max-width: 500px) /*Com 500px de largura no máximo, e abaixo disso...*/
+{
+
+    .p-home {
+        width: 50%;
+        line-height: 2vw;   
+    }
+
+    
+    .text-home .title-bold{
+        margin-top: -16vw;
+    }
+
+    .logo-menu {
+        width: 30px;
+    }
+
+    .logo-home {
+        float: right;
+    
+        display: flex;
+        
+        width: 35%;
+    
+        position: absolute;
+    
+        right: 15vw;
+        top: 20vw;
+    }
+
+    .p-equipe{
+        line-height: 2vw; 
+    }
+
+    .p-uni{
+        line-height: 2vw; 
+    }
+
+    .title-obj{
+        margin-top: -10vw;
+    }
+}
+
+@media (width: 411px) /*Com 420px de largura no máximo, e abaixo disso...*/
+{
+
+    .p-home {
+        width: 50%;
+        line-height: 2vw;   
+    }
+
+    
+    .text-home .title-bold{
+        margin-top: -25vw;
+    }
+
+}

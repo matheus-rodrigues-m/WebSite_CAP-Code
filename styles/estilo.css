@@ -1,0 +1,697 @@
+*{
+    font-family: 'Comfortaa', cursive;
+
+}
+
+html{
+    background-color: #232323;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.background-1 {
+    width: 100%;
+
+    top: 0;
+    right: 0%;
+
+    position: absolute;
+
+    z-index: -1;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: clamp(0.5vw, 2.3vw, 3vw);
+}
+
+p {
+    font-weight: 300;
+    font-size: clamp(0.5vw, 1.5vw, 3vw);
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.title-bold {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+
+    margin: 0;
+}
+
+.container{
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+
+    padding-left: 3%;
+    padding-right:3%; 
+
+    z-index: -10;
+}
+
+.link {
+    text-decoration: none;
+    color: #14ccbf;
+
+    transition: 200ms ease-in-out;
+
+    z-index: 1000;
+}
+
+.link:hover, .link:focus{
+    color:white;
+}
+
+/*BOTOES*/
+
+.button {
+    width: 60%;
+
+    font-size: clamp(0.5vw, 1.5vw, 3vw);
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+}
+
+.botao{
+    width: 15vw;
+    height: 6vh;
+
+    border-radius: 20px;
+    border: none;
+
+    font-size: clamp(1vw, 1.3vw, 3vw);
+
+    background-color: #232323;
+    color: white;
+
+    cursor: pointer;
+
+    z-index: 1;
+}
+
+.botao-obj{
+    border: #00ff84 2px solid;
+    background-position: right left;
+    transition: 200ms ease-out;
+}
+
+.botao-obj:hover, .botao-obj:focus{
+    background: #00ff84;
+}
+
+.botao-val{
+    border: #eaaf3b 2px solid;
+    background-position: right left;
+    transition: 200ms ease-out;
+}
+
+.botao-val:hover, .botao-val:focus{
+    background: #eaaf3b;
+}
+
+.botao-vis{
+    border: #ff545c 2px solid;
+    background-position: right left;
+    transition: 200ms ease-out;
+}
+
+.botao-vis:hover, .botao-vis:focus{
+    background:#ff545c;
+}
+
+.botao-env{
+    margin-top: 3%;
+
+    border: #14ccbf 2px solid;
+    background-position: right left;
+    transition: 200ms ease-out;
+}
+
+.botao-env:hover, .botao-env:focus{
+    background: #14ccbf;
+}
+
+/*MENU*/
+.cabecalho {
+    display: flex;
+    position: fixed;
+
+    align-items: center;
+
+    width: 100vw;
+    z-index: 10000;
+
+    justify-content: space-between;
+
+    top: 0;
+
+    background: rgba(23, 23, 23, 0.7);
+
+}
+
+.logo-menu {
+    float: left;
+
+    padding-left: 33%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;  
+
+    width: 48%;
+}
+
+.menu {    
+    list-style: none;
+
+    float: right ;
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+
+    color: white;
+    text-transform: uppercase;
+
+    font-size:clamp(0.5vw, 1.3vw, 3vw);
+}
+
+.menu li{
+    padding-right: 20px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    float: right;
+
+    padding-bottom: 3px;
+
+    background-image: linear-gradient(white, white), linear-gradient(#23232300, #23232300);
+    background-size: 0 2px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .2s ease-out;
+}
+
+.menu li a:hover {
+    background-size: 100% 2px, auto;
+}
+
+
+/*HOME*/
+.text-home {
+    display: flex;
+}
+
+
+.title-home{
+    margin-top: 0px;    
+}
+.logo-home {
+    float: right;
+
+    display: flex;
+    
+    width: 35%;
+
+    position: absolute;
+
+    right: 9%;
+    top: 33%;
+}
+
+.p-home{
+    /*margin-right: 35%;*/
+
+    width: 55%;
+}
+
+/*EQUIPE*/
+
+.equipe {
+    padding-top: 21%;
+}
+
+.text-equipe{
+    margin-bottom: 2%;
+}
+
+.p-equipe{
+    text-align: right;
+    
+    margin-right: 4.5vw;
+    margin-bottom: 7vh;
+
+    font-size: clamp(0.5vw, 1.5vw, 3vw);
+
+}
+
+.img-equipe {
+    width: 28%;
+
+    position: absolute;
+}
+
+.title-equipe {
+    width: 10%;
+    float: right;
+    margin-left: 77vw;
+
+    justify-content: right;
+}
+
+.title-obj {
+    font-size: clamp(0.5vw, 2.3vw, 3vw);
+
+    float: right;
+    right: 0;
+    display: flex;
+    justify-content: right;
+
+    text-align: right;
+
+    margin-bottom: 2vw;
+}
+
+#eqp {
+    font-size: clamp(1vw, 2.3vw, 3vw);
+    font-weight: 700;
+    margin-bottom: 1vw;
+    text-align: right;
+}
+
+/*UNIVERSIDADE*/
+
+.universidade{
+    padding-top: 15%;
+}
+
+.p-uni {
+    width: 55%;
+}
+
+.img-uni {
+    width: 33%;
+
+    float: right;
+
+    position: absolute;
+
+    margin: auto;
+
+    right: 5%;
+    margin-top: -7%;
+}
+
+
+.uni-title {
+    float: right;
+    right: 0;
+
+    text-align: center;
+
+    margin-left: 64vw;
+}
+
+/*MEMBROS*/
+.membros {
+    background: url(../assets/background-membros_Prancheta_1.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 99.4%;
+    margin: 0;
+    margin-left: -9.29vw;
+    padding: 6.9%;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 25%;
+}
+
+.membros .title-bold {
+    margin-left: 3vw;
+    margin-top: 18vw;
+    padding-bottom: 5%;
+}
+
+.img-membros {
+    width: 50%;
+    margin-top: -15vw;
+}
+
+.photo {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: -36%;
+}
+
+.photo .first-line{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.photo .first-line{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin: 0;
+    margin-left: 80vw;
+    margin-bottom: 3%;
+}
+
+.photo .first-line .foto{
+    width: 150%;
+}
+
+.photo .second-line{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    margin-left: 3%;
+    margin-bottom: 3%;
+}
+
+.photo .second-line .foto{
+    margin-right: 10%;
+}
+
+.photo .third-line{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    margin-left: 3%;
+    margin-bottom: 3%;
+}
+
+.photo .third-line .foto{
+    margin-left: 10%;
+}
+
+.photo .third-line .foto:nth-child(3){
+    margin-left: 12%;
+}
+
+.photo .third-line .foto:nth-child(4){
+    margin-left: 12%;
+}
+
+.photo .fourth-line{
+    display: flex;
+    flex-direction: row;
+    width: 48%;
+    margin: 0;
+    margin-left: -47%;
+    margin-bottom: 3%;
+}
+
+.photo .fourth-line .foto{
+    margin-right: 20%;
+}
+
+
+.foto {
+    position: relative;
+    text-align: center;
+    color: white;
+
+    width: 30%; /*O Div Container ocupa 30% da página*/
+
+    border-radius: 100%; /*Faz a div ficar redonda*/
+    justify-content: center;
+    overflow: hidden; /*Corta o que estiver por fora da div, ou seja, como ela é redonda, corta o que estiver
+    fora deste círculo (assim que fica esse efeito de redondo só dentro da imagem)*/
+
+    cursor: pointer;
+
+    transition: ease-in-out 400ms; /*Velocidade da transição do texto*/
+    margin-left: 2%;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    /*Ocupa 100% do tamanho da Div Container*/
+    border-radius: 100%;
+    /*Faz o espaço ocupado por ela ser somente o círculo, arredondando este espaço*/
+}
+
+
+.foto .text {
+    position: absolute; /*Não intefere em outros elementos, assim, pode ficar por cima da imagem*/
+    margin: auto;
+    justify-content: center; /*Coloca o conteúdo no centro*/
+    width: 100%; /*Largura total da div Container*/
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 25%; /*Tamanho para aparecer somente o nome*/
+    padding-top: 0px;
+
+    transition: ease-in-out 400ms;
+
+    text-align: center;
+    height: 30%; /*Tamanho para aparecer somente o nome*/
+    padding-top: 0px;
+
+    font-size: clamp(0.5vw, 0.8vw, 3vw);
+    padding-left: -2%;
+    padding-right: -2%;
+
+}
+
+.foto .text h1 {
+    margin-top: 50%;
+    transition: ease-in-out 400ms;
+    font-size: clamp(0.5vw, 1vw, 3vw);
+}
+
+.alex .text {
+    font-size: clamp(0.5vw, 1.2vw, 3vw);
+}
+
+.alex .text h1 {
+    margin-top: 20%;
+    font-size: clamp(0.8vw, 1.8vw, 3vw);
+}
+
+.luis .text h1 {
+    margin-top: 35%;
+}
+
+.leticia .text h1 {
+    margin-top: 35%;
+}
+
+.eduarda .text h1 {
+    margin-top: 30%;
+}
+
+.yuri .text h1 {
+    margin-top: 30%;
+}
+
+.heitor .text h1 {
+    margin-top: 27%;
+}
+
+.savio .text h1 {
+    margin-top: 35%;
+}
+
+.eshelly .text h1 {
+    margin-top: 35%;
+}
+
+.danilo .text h1 {
+    margin-top: 30%;
+}
+
+.matheus .text h1 {
+    margin-top: 50%;
+}
+
+.jenny .text h1 {
+    margin-top: 23%;
+}
+
+.foto:hover .text {
+    height: 100%;
+}
+
+.foto:hover .text h1 {
+    margin-top: 0%;
+}
+
+
+/*CONTATO*/
+
+.contato{
+    padding-top: 5%;
+
+    margin-top: -20%;
+
+    right: 0;
+}
+
+.contato .title-bold {
+    margin-left: 82vw;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    right: 0;
+}
+
+.form .form2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.form2 input {
+    float: right;
+    width: 50%;
+}
+
+.form .imagemcontato {
+    width: 40%;
+}
+
+.form form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    border-radius: 8px;
+    border: none;
+    margin: 1vw;
+    height: 6vw;
+}
+
+form textarea {
+    border-radius: 8px;
+    border: none;
+    margin: 1vw;
+    height: 12vw;
+    resize: vertical;
+}
+
+.form input[type="text"] {
+    font-size: clamp(1vw, 1.5vw, 3vw);
+    padding-left: 10px;
+}
+
+.form input[type="email"] {
+    font-size: clamp(1vw, 1.5vw, 3vw);
+    padding-left: 10px;
+}
+
+.form textarea {
+    font-size: clamp(1vw, 1.5vw, 3vw);
+    padding-left: 10px;
+    padding-top: 3%;
+}
+
+/*RODAPE*/
+
+footer {
+    width: 100%;
+    margin: 0%;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.logo-footer{
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 50%;
+
+    /*top: 296vw;*/
+    /*float: left;*/
+}
+
+.mapa {
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    text-align: center;
+}
+
+.mapa iframe{
+    /*float: right;*/
+    height: 12vw;
+    width: 12vw;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: -40%;
+}
+
+.middle-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    color: white;
+    margin-right: 22vw;
+    padding-top: 7%;
+}
+
+.middle-footer a {
+    font-size: 3vw;
+    color: white;
+    margin: 10%;
+}
+
+.texto-footer {
+    text-align: center;
+    border-top: solid white 3px;
+    padding: 1vw;
+    width: 160%;
+    font-size: clamp(0.5vw, 1.5vw, 3vw)
+}
+
+.icone-footer{
+    display:flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+
+/*MEDIAQUERYS*/
+
+@media(min-width: 1000px) {
+}
