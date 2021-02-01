@@ -181,7 +181,7 @@
     }
 }
 
-@media (width: 411px) /*Com 420px de largura no máximo, e abaixo disso...*/
+@media (max-width: 411px) /*Com 420px de largura no máximo, e abaixo disso...*/
 {
 
     .p-home {
@@ -192,6 +192,33 @@
     
     .text-home .title-bold{
         margin-top: -25vw;
+    }
+
+    .home {
+        margin-top: 8vw;
+    }
+
+    @media (max-height: 850px)
+    {
+        .home {
+            margin-top: 4vw;
+        }
+    }
+
+    
+    @media (max-height: 750px)
+    {
+        .home {
+            margin-top: 8vw;
+        }
+    }   
+
+
+    @media (max-height: 700px)
+    {
+        .home {
+            margin-top: 8vw;
+        }
     }
 
 }
